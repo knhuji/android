@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.NoteDetail">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize">
+
+        <EditText
+            android:id="@+id/title"
+            android:layout_width="280dp"
+            android:layout_height="58dp"
+            android:layout_marginLeft="60dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="Title"
+            android:textColor="#000"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="42dp"
+            android:layout_height="55dp"
+            android:layout_marginLeft="10dp"
+            app:srcCompat="@mipmap/icons8_left" />
+            <ImageView
+            android:id="@+id/save"
+            android:layout_width="52dp"
+            android:layout_height="55dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            app:srcCompat="@mipmap/icons8_checkmark" />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/cv_title"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+        android:elevation="5dp"
+        app:cardCornerRadius="5dp">
+        <EditText
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="5dp"
+            android:background="@android:color/transparent"
+            android:hint="Nội dung"
+            android:textSize="15dp"></EditText>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
